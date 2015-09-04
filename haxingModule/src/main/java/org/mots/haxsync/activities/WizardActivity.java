@@ -17,6 +17,7 @@ import com.facebook.android.Facebook;
 import com.facebook.android.FacebookError;
 import com.facebook.android.Facebook.DialogListener;
 import com.facebook.android.Util;
+import com.github.amlcurran.showcaseview.ShowcaseView;
 
 import android.net.Uri;
 import android.opengl.Visibility;
@@ -46,7 +47,6 @@ import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.ViewFlipper;
 
-import com.github.espiandev.showcaseview.ShowcaseView;
 
 public class WizardActivity extends AccountAuthenticatorActivity {
 	
