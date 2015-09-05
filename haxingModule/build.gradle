@@ -1,12 +1,12 @@
 apply plugin: 'android'
 
 android {
-    compileSdkVersion 15
+    compileSdkVersion 18
     buildToolsVersion "23.0.0"
 
     defaultConfig {
-        minSdkVersion 14
-        targetSdkVersion 15
+        minSdkVersion 15
+        targetSdkVersion 18
         versionCode 1
         versionName "1.0"
     }
@@ -28,6 +28,6 @@ dependencies {
     compile 'org.apache.commons:commons-lang3:3.2'
     compile 'com.facebook.android:facebook-android-sdk:3.19.0'
     compile 'com.github.amlcurran.showcaseview:library:5.0.0'
-    // compile 'com.google.android.gms:play-services:5.+'
+    compile 'me.villani.lorenzo.android:android-cropimage:1.1.0'
     compile fileTree(dir: 'libs', include: ['*.jar'])
 }
