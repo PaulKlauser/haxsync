@@ -20,22 +20,22 @@
         android:key="samsung_hax">
         <intent
             android:action="android.intent.action.VIEW"
-            android:targetClass="org.mots.haxsync.activities.WizardActivity"
-            android:targetPackage="org.mots.haxsync" />
+            android:targetClass="org.codarama.haxsync.activities.WizardActivity"
+            android:targetPackage="org.codarama.haxsync" />
     </PreferenceScreen>
     <PreferenceScreen android:title="@string/preferences" 
         android:key="samsung_hax">
         <intent
             android:action="android.intent.action.VIEW"
-            android:targetClass="org.mots.haxsync.activities.Preferences"
-            android:targetPackage="org.mots.haxsync" />
+            android:targetClass="org.codarama.haxsync.activities.Preferences"
+            android:targetPackage="org.codarama.haxsync" />
     </PreferenceScreen>
     <PreferenceScreen android:title="@string/about" 
         android:key="samsung_hax">
         <intent
             android:action="android.intent.action.VIEW"
-            android:targetClass="org.mots.haxsync.activities.AboutPopup"
-            android:targetPackage="org.mots.haxsync" />
+            android:targetClass="org.codarama.haxsync.activities.AboutPopup"
+            android:targetPackage="org.codarama.haxsync" />
  </PreferenceScreen>
 <!--      <PreferenceScreen android:title="@string/visit_fb" -->
 <!--         android:summary="@string/visit_fb_description" -->

@@ -14,12 +14,12 @@
   limitations under the License.
 -->
 <ContactsAccountType xmlns:android="http://schemas.android.com/apk/res/android"
- viewStreamItemActivity="org.mots.haxsync.activities.PostActivity"
- viewContactNotifyService="org.mots.haxsync.services.NotifierService"
- viewStreamItemPhotoActivity="org.mots.haxsync.activities.ThumbActivity">
+ viewStreamItemActivity="org.codarama.haxsync.activities.PostActivity"
+ viewContactNotifyService="org.codarama.haxsync.services.NotifierService"
+ viewStreamItemPhotoActivity="org.codarama.haxsync.activities.ThumbActivity">
 <ContactsDataKind
 		android:icon="@drawable/icon"
-		android:mimeType="vnd.android.cursor.item/vnd.org.mots.haxsync.profile"
+		android:mimeType="vnd.android.cursor.item/vnd.org.codarama.haxsync.profile"
 		android:summaryColumn="data2"
 		android:detailColumn="data3"
 		android:detailSocialSummary="true" />

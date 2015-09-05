@@ -9,8 +9,8 @@
             android:title="@string/contact_manager">
             <intent
                 android:action="android.intent.action.VIEW"
-                android:targetClass="org.mots.haxsync.activities.ContactListActivity"
-                android:targetPackage="org.mots.haxsync" />
+                android:targetClass="org.codarama.haxsync.activities.ContactListActivity"
+                android:targetPackage="org.codarama.haxsync" />
         </PreferenceScreen>
         <CheckBoxPreference
             android:defaultValue="true"
@@ -32,8 +32,8 @@
         <!--             android:title="@string/additional_friends" > -->
         <!--             <intent -->
         <!--                 android:action="android.intent.action.VIEW" -->
-        <!--                 android:targetClass="org.mots.haxsync.activities.FriendPicker" -->
-        <!--                 android:targetPackage="org.mots.haxsync" /> -->
+        <!--                 android:targetClass="org.codarama.haxsync.activities.FriendPicker" -->
+        <!--                 android:targetPackage="org.codarama.haxsync" /> -->
         <!--         </PreferenceScreen> -->
         <CheckBoxPreference
             android:summary="@string/sync_self_summary"
@@ -69,8 +69,8 @@
             android:summary="@string/google_backup_summary">
             <intent
                 android:action="android.intent.action.VIEW"
-                android:targetClass="org.mots.haxsync.activities.GoogleBackup"
-                android:targetPackage="org.mots.haxsync" />
+                android:targetClass="org.codarama.haxsync.activities.GoogleBackup"
+                android:targetPackage="org.codarama.haxsync" />
         </PreferenceScreen>
 
 

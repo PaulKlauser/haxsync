@@ -1,7 +1,7 @@
 <resources>
 
     <string name="app_name">HaxSync</string>
-    <string name="ACCOUNT_TYPE">org.mots.haxsync.account</string>
+    <string name="ACCOUNT_TYPE">org.codarama.haxsync.account</string>
     <string name="general_settings">General Settings</string>
     <string name="general_summary">Facebook App, Sync Frequency, Resource Saving</string>
     <string name="contact_settings">Contact Settings</string>

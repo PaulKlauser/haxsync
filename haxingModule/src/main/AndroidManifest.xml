@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.mots.haxsync"
+    package="org.codarama.haxsync"
     android:installLocation="internalOnly"
     android:versionCode="47"
     android:versionName="2.8.a" >
@@ -37,7 +37,7 @@
             android:theme="@android:style/Theme.NoDisplay" >
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
-                <action android:name="org.mots.haxsync.LOGIN" />
+                <action android:name="org.codarama.haxsync.LOGIN" />
                 <category android:name="android.intent.category.INFO" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -50,7 +50,7 @@
 
                 <category android:name="android.intent.category.DEFAULT" />
 
-                <data android:mimeType="vnd.android.cursor.item/vnd.org.mots.haxsync.profile" />
+                <data android:mimeType="vnd.android.cursor.item/vnd.org.codarama.haxsync.profile" />
             </intent-filter>
         </activity>
         <activity
@@ -82,7 +82,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="org.mots.haxsync.activities.Preferences"
+            android:name=".activities.Preferences"
             android:label="HaxSync Preferences"
             android:theme="@android:style/Theme.Holo" >
             <intent-filter>
@@ -97,7 +97,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="org.mots.haxsync.activities.Help"
+            android:name=".activities.Help"
             android:theme="@android:style/Theme.Holo.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -112,7 +112,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="org.mots.haxsync.activities.SyncPopup"
+            android:name=".activities.SyncPopup"
             android:label="@string/sync_freq"
             android:theme="@android:style/Theme.Holo.Dialog" >
             <intent-filter>
@@ -163,7 +163,7 @@
                 android:resource="@xml/authenticator" />
         </service>
         <service
-            android:name="org.mots.haxsync.services.ContactsSyncAdapterService"
+            android:name=".services.ContactsSyncAdapterService"
             android:exported="true"
             android:process=":contacts" >
             <intent-filter>
@@ -178,7 +178,7 @@
                 android:resource="@xml/contacts" />
         </service>
         <service
-            android:name="org.mots.haxsync.services.CalendarSyncAdapterService"
+            android:name=".services.CalendarSyncAdapterService"
             android:exported="true"
             android:process=":calendar" >
             <intent-filter>
@@ -190,7 +190,7 @@
                 android:resource="@xml/sync_calendar" />
         </service>
         <service
-            android:name="org.mots.haxsync.services.NotifierService"
+            android:name=".services.NotifierService"
             android:exported="true" >
         </service>
 

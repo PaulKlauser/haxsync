@@ -23,7 +23,7 @@ msgid "HaxSync"
 msgstr ""
 
 msgctxt "ACCOUNT_TYPE"
-msgid "org.mots.haxsync.account"
+msgid "org.codarama.haxsync.account"
 msgstr ""
 
 msgctxt "general_settings"

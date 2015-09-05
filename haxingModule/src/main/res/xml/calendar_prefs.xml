@@ -27,8 +27,8 @@
             android:title="@string/reminder_time" >
             <intent
                 android:action="android.intent.action.VIEW"
-                android:targetClass="org.mots.haxsync.activities.EventReminder"
-                android:targetPackage="org.mots.haxsync" />
+                android:targetClass="org.codarama.haxsync.activities.EventReminder"
+                android:targetPackage="org.codarama.haxsync" />
         </PreferenceScreen>    </PreferenceCategory>
     <PreferenceCategory android:title="@string/birthday_sync" >
         <CheckBoxPreference
@@ -48,8 +48,8 @@
             android:title="@string/reminder_time" >
             <intent
                 android:action="android.intent.action.VIEW"
-                android:targetClass="org.mots.haxsync.activities.BirthdayReminder"
-                android:targetPackage="org.mots.haxsync" />
+                android:targetClass="org.codarama.haxsync.activities.BirthdayReminder"
+                android:targetPackage="org.codarama.haxsync" />
         </PreferenceScreen>
     </PreferenceCategory>
 

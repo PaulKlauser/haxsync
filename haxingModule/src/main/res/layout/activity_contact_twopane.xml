@@ -11,7 +11,7 @@
 
     <fragment
         android:id="@+id/contact_list"
-        android:name="org.mots.haxsync.fragments.ContactListFragment"
+        android:name="org.codarama.haxsync.fragments.ContactListFragment"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="5"

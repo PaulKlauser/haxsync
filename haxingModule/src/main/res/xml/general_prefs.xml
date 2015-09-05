@@ -6,8 +6,8 @@
         <PreferenceScreen android:title="@string/sync_freq" >
             <intent
                 android:action="android.intent.action.VIEW"
-                android:targetClass="org.mots.haxsync.activities.SyncPopup"
-                android:targetPackage="org.mots.haxsync" />
+                android:targetClass="org.codarama.haxsync.activities.SyncPopup"
+                android:targetPackage="org.codarama.haxsync" />
         </PreferenceScreen>
     </PreferenceCategory>
     <PreferenceCategory android:title="@string/resource_saving" >

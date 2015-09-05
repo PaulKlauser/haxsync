@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">HaxSync</string>
-    <string name="ACCOUNT_TYPE">org.mots.haxsync.account</string>
+    <string name="ACCOUNT_TYPE">org.codarama.haxsync.account</string>
     <string name="general_settings">Paramètres généraux</string>
     <string name="general_summary">Fréquence de synchronisation, économie de données</string>
     <string name="contact_settings">Paramètres de contacts</string>
