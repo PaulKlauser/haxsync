@@ -7,7 +7,9 @@ Current state
 ---
 
 The project is currently **compiling**.
+
 The project is currently **not working**.
+
 The project is currently **not available for download** at Google Play.
 
 Q&A
