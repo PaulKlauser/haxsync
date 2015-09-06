@@ -20,7 +20,7 @@ addons:
     notification_email: tihomir.mateev@gmail.com
     build_command_prepend: "gradlew clean"
     build_command:   "gradlew test"
-    branch_pattern: coverity_scan
+    branch_pattern: master
 
 # Let's try to build...
 script: ./gradlew test
