@@ -1,8 +1,0 @@
-language: android
-jdk:
-  - oraclejdk8
-android:
-  components:
-    - build-tools-19.0.1
-notifications:
-    slack: codarama:YVl3XmRANEPWD74rdOErjXGG

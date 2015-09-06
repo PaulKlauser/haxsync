@@ -1,0 +1,16 @@
+language: android
+android:
+  components:
+    - build-tools-23.0.0
+
+notifications:
+  slack: codarama:YVl3XmRANEPWD74rdOErjXGG
+
+before_install:
+
+  # environment info
+  - ./gradlew -v
+  - uname -a
+
+# Let's try to build...
+script: ./gradlew assemble
