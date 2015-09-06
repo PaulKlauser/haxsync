@@ -7,6 +7,7 @@ Current state
 ---
 
 [![Build Status](https://travis-ci.org/Codarama/haxsync.svg?branch=master)](https://travis-ci.org/Codarama/haxsync)
+[![Coverage Status](https://coveralls.io/repos/Codarama/haxsync/badge.svg?branch=master&service=github)](https://coveralls.io/github/Codarama/haxsync?branch=master)
 
 The project is currently **not working**.
 
