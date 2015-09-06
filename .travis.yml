@@ -13,4 +13,4 @@ before_install:
   - uname -a
 
 # Let's try to build...
-script: ./gradlew assemble
+script: ./gradlew test

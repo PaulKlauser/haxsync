@@ -6,7 +6,7 @@ This project is forked from the original [HaxSync](https://github.com/mots/haxsy
 Current state
 ---
 
-The project is currently **compiling**.
+[![Build Status](https://travis-ci.org/Codarama/haxsync.svg?branch=master)](https://travis-ci.org/Codarama/haxsync)
 
 The project is currently **not working**.
 
