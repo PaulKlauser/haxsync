@@ -19,8 +19,8 @@ addons:
       description: "Android application for contacts synchronization"
     notification_email: tihomir.mateev@gmail.com
     build_command_prepend: "gradlew clean"
-    build_command:   "gradlew test"
+    build_command:   "gradlew :haxingModule:compileDebugSources"
     branch_pattern: master
 
 # Let's try to build...
-script: ./gradlew test
+script: ./gradlew clean test

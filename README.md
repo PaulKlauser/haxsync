@@ -1,7 +1,19 @@
 HaxSync by Codarama
 =======
 
-This project is forked from the original [HaxSync](https://github.com/mots/haxsync) project by Mathias Roth
+This project is forked from the original [HaxSync](https://github.com/mots/haxsync) project by Mathias Roth.
+
+HaxSync was initially developed with the puspose of better integration between Android devices and Facebook. Since then a lot has changed and there are multiple solutions out there that allow contacts syncing and calendar integrations.
+
+However with the recent [changes](https://developers.facebook.com/docs/apps/upgrading#upgrading_v2_0_user_ids) to the Facebook API it [has become apparent](http://stackoverflow.com/questions/23417356/facebook-graph-api-v2-0-me-friends-returns-empty-or-only-friends-who-also-u) that joining the information from Facebook and Android / Google accounts has become much harder, the major limitation being that every friend you want to sync needs to have given permissions to the syncing application, otherwise his information would not be provided by the Facebook API.
+
+This, however, is practically impossible for anybody with more than 5 friends.
+
+Project Roadmap
+---
+1. Provide easy ways of importing Facebook contact lists
+2. Provide easy to use interface to configure contacts sync
+3. Provide advanced options for syncing intervals, etc.
 
 Current state
 ---
@@ -10,7 +22,7 @@ Current state
 [![Coverage Status](https://coveralls.io/repos/Codarama/haxsync/badge.svg?branch=master&service=github)](https://coveralls.io/github/Codarama/haxsync?branch=master)
 [![Static Code Analysis Status](https://scan.coverity.com/projects/6282/badge.svg)](https://scan.coverity.com/projects/codarama-haxsync)
 
-The project is currently **not working**.
+The project is currently **unstable**.
 
 The project is currently **not available for download** at Google Play.
 
