@@ -19,7 +19,7 @@ addons:
       description: "Android application for contacts synchronization"
     notification_email: tihomir.mateev@gmail.com
     build_command_prepend: "gradlew clean"
-    build_command:   "gradlew test"
+    build_command:   "gradlew assemble"
     branch_pattern: coverity_scan
 
 # Let's try to build...
