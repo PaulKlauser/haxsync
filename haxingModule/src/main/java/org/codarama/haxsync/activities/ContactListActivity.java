@@ -1,12 +1,13 @@
 package org.codarama.haxsync.activities;
 
-import org.codarama.haxsync.R;
-import org.codarama.haxsync.fragments.ContactDetailFragment;
-import org.codarama.haxsync.fragments.ContactListFragment;
 import android.app.Activity;
 import android.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
+
+import org.codarama.haxsync.R;
+import org.codarama.haxsync.fragments.ContactDetailFragment;
+import org.codarama.haxsync.fragments.ContactListFragment;
 
 public class ContactListActivity extends Activity
         implements ContactListFragment.Callbacks {
@@ -20,11 +21,11 @@ public class ContactListActivity extends Activity
 
         if (findViewById(R.id.contact_detail_container) != null) {
             mTwoPane = true;
-            
+
             ((ContactListFragment) getFragmentManager()
                     .findFragmentById(R.id.contact_list))
                     .setActivateOnItemClick(true);
-            
+
         }
     }
 
@@ -46,5 +47,5 @@ public class ContactListActivity extends Activity
         }
     }
 
-    
+
 }

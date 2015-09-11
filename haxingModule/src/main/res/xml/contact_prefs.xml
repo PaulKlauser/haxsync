@@ -2,7 +2,9 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     android:title="Contact Settings">
 
-    <PreferenceCategory android:title="@string/contact_sync" android:key="contact_sync">
+    <PreferenceCategory
+        android:key="contact_sync"
+        android:title="@string/contact_sync">
 
         <PreferenceScreen
             android:summary="@string/contact_manager_description"
@@ -36,37 +38,37 @@
         <!--                 android:targetPackage="org.codarama.haxsync" /> -->
         <!--         </PreferenceScreen> -->
         <CheckBoxPreference
-            android:summary="@string/sync_self_summary"
+            android:defaultValue="false"
             android:key="sync_self"
-            android:title="@string/sync_self"
-            android:defaultValue="false" />
-        <CheckBoxPreference
-            android:summary="@string/add_me_to_friends_summary"
-            android:key="add_me_to_friends"
-            android:title="@string/add_me_to_friends"
-            android:defaultValue="false" />
-        <CheckBoxPreference
-        android:summary="@string/ignore_middle_names_summary"
-        android:key="ignore_middle_names"
-        android:title="@string/ignore_middle_names"
-        android:defaultValue="true" />
-        <CheckBoxPreference
-            android:key="sync_location"
-            android:title="@string/sync_location"
-            android:defaultValue="true" />
-        <CheckBoxPreference
-            android:title="@string/sync_birthdays"
-            android:key="sync_contact_birthday"
-            android:summary="@string/sync_birthday_contact_description"
-            android:defaultValue="true" />
+            android:summary="@string/sync_self_summary"
+            android:title="@string/sync_self" />
         <CheckBoxPreference
             android:defaultValue="false"
-            android:title="@string/sync_facebook_email"
+            android:key="add_me_to_friends"
+            android:summary="@string/add_me_to_friends_summary"
+            android:title="@string/add_me_to_friends" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="ignore_middle_names"
+            android:summary="@string/ignore_middle_names_summary"
+            android:title="@string/ignore_middle_names" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="sync_location"
+            android:title="@string/sync_location" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="sync_contact_birthday"
+            android:summary="@string/sync_birthday_contact_description"
+            android:title="@string/sync_birthdays" />
+        <CheckBoxPreference
+            android:defaultValue="false"
             android:key="sync_facebook_email"
-            android:summary="@string/sync_facebook_email_description" />
+            android:summary="@string/sync_facebook_email_description"
+            android:title="@string/sync_facebook_email" />
         <PreferenceScreen
-            android:title="@string/google_backup"
-            android:summary="@string/google_backup_summary">
+            android:summary="@string/google_backup_summary"
+            android:title="@string/google_backup">
             <intent
                 android:action="android.intent.action.VIEW"
                 android:targetClass="org.codarama.haxsync.activities.GoogleBackup"
@@ -75,7 +77,9 @@
 
 
     </PreferenceCategory>
-    <PreferenceCategory android:title="@string/status_updates" android:key="status_updates">
+    <PreferenceCategory
+        android:key="status_updates"
+        android:title="@string/status_updates">
         <CheckBoxPreference
             android:defaultValue="true"
             android:key="sync_status"
@@ -87,36 +91,36 @@
             android:summary="@string/status_new_summary"
             android:title="@string/status_new" />
         <CheckBoxPreference
-            android:summary="@string/timeline_all_summary"
+            android:dependency="status_new"
             android:key="timeline_all"
-            android:title="@string/timeline_all"
-            android:dependency="status_new" />
+            android:summary="@string/timeline_all_summary"
+            android:title="@string/timeline_all" />
     </PreferenceCategory>
     <PreferenceCategory android:title="@string/contact_images">
         <CheckBoxPreference
             android:key="update_google_photos"
-            android:title="@string/update_google_photos"
-            android:summary="@string/update_google_photos_description" />
-<!--        <CheckBoxPreference
-            android:defaultValue="true"
-            android:enabled="true"
-            android:key="crop_square"
-            android:title="@string/crop_square" />
+            android:summary="@string/update_google_photos_description"
+            android:title="@string/update_google_photos" />
+        <!--        <CheckBoxPreference
+                    android:defaultValue="true"
+                    android:enabled="true"
+                    android:key="crop_square"
+                    android:title="@string/crop_square" />
+                <CheckBoxPreference
+                    android:key="face_detect"
+                    android:title="@string/face_detect"
+                    android:dependency="crop_square"
+                    android:defaultValue="true"
+                    android:summary="@string/crop_square_summary" />-->
         <CheckBoxPreference
-            android:key="face_detect"
-            android:title="@string/face_detect"
-            android:dependency="crop_square"
             android:defaultValue="true"
-            android:summary="@string/crop_square_summary" />-->
-        <CheckBoxPreference
             android:key="image_primary"
-            android:title="@string/image_primary"
-            android:defaultValue="true"
-            android:summary="@string/image_primary_description" />
+            android:summary="@string/image_primary_description"
+            android:title="@string/image_primary" />
         <CheckBoxPreference
             android:key="force_dl"
-            android:title="@string/force_dl"
-            android:summary="@string/force_dl_summary" />
+            android:summary="@string/force_dl_summary"
+            android:title="@string/force_dl" />
         <!--     <CheckBoxPreference android:title="root_enabled" android:key="root_enabled"/> -->
 
     </PreferenceCategory>

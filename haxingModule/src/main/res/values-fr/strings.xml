@@ -58,5 +58,5 @@
     <string name="force_dl_summary">Force le retéléchargement de toutes les images de contact à chaque synchronisation.</string>
     <string name="sync_location">Synchroniser les adresses</string>
     <string name="event_status">Événements à synchroniser</string>
-    <string name="event_status_description">Synchroniser uniquement les éléments avec l\'un des statuts RSVP sélectionnés.</string>     
+    <string name="event_status_description">Synchroniser uniquement les éléments avec l\'un des statuts RSVP sélectionnés.</string>
 </resources>

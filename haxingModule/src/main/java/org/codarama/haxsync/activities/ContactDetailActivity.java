@@ -1,13 +1,13 @@
 package org.codarama.haxsync.activities;
 
-import org.codarama.haxsync.R;
-import org.codarama.haxsync.fragments.ContactDetailFragment;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
 import android.view.MenuItem;
+
+import org.codarama.haxsync.R;
+import org.codarama.haxsync.fragments.ContactDetailFragment;
 
 public class ContactDetailActivity extends Activity {
 

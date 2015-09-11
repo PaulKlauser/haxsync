@@ -1,25 +1,5 @@
 package org.codarama.haxsync.activities;
 
-import java.util.ArrayList;
-
-import org.json.JSONException;
-import org.json.JSONObject;
-import org.codarama.haxsync.R;
-import org.codarama.haxsync.asynctasks.QuickSettings;
-import org.codarama.haxsync.utilities.DeviceUtil;
-import org.codarama.haxsync.utilities.FacebookUtil;
-
-import com.facebook.android.DialogError;
-import com.facebook.android.FacebookError;
-import com.facebook.android.Facebook.DialogListener;
-import com.github.amlcurran.showcaseview.ShowcaseView;
-import com.github.amlcurran.showcaseview.targets.ViewTarget;
-
-import android.net.Uri;
-import android.os.Bundle;
-import android.preference.PreferenceManager;
-import android.provider.CalendarContract;
-import android.provider.ContactsContract;
 import android.accounts.Account;
 import android.accounts.AccountAuthenticatorActivity;
 import android.accounts.AccountManager;
@@ -29,6 +9,11 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.LightingColorFilter;
+import android.net.Uri;
+import android.os.Bundle;
+import android.preference.PreferenceManager;
+import android.provider.CalendarContract;
+import android.provider.ContactsContract;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -42,35 +27,41 @@ import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.ViewFlipper;
 
+import com.facebook.android.DialogError;
+import com.facebook.android.Facebook.DialogListener;
+import com.facebook.android.FacebookError;
+import com.github.amlcurran.showcaseview.ShowcaseView;
+import com.github.amlcurran.showcaseview.targets.ViewTarget;
+
+import org.codarama.haxsync.R;
+import org.codarama.haxsync.asynctasks.QuickSettings;
+import org.codarama.haxsync.utilities.DeviceUtil;
+import org.codarama.haxsync.utilities.FacebookUtil;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.ArrayList;
+
 
 public class WizardActivity extends AccountAuthenticatorActivity {
 
+    private final String TAG = "WizardActivity";
     private ArrayList<Integer> steps = new ArrayList<Integer>();
-
     private String[] permissions = {"offline_access", "read_stream", "user_events", "friends_events", "friends_status", "user_status",
             "friends_photos", "user_photos", "friends_about_me", "friends_website", "email", "friends_birthday", "friends_location"};
-
-
     private ViewFlipper flipper = null;
     private View next = null;
     private View settingsView = null;
     private TextView stepDisplay = null;
     private Spinner contactSpinner = null;
-
     private Button fbButton = null;
     private Button workaroundButton = null;
-
     private Switch eventSwitch;
     private Switch birthdaySwitch;
     private Switch reminderSwitch;
-
     private CheckBox wizardCheck;
-
     private ShowcaseView sv;
     private boolean isShowCase = false;
-
-
-    private final String TAG = "WizardActivity";
     private View showcaseView;
 
     private void setupSteps() {
@@ -146,10 +137,9 @@ public class WizardActivity extends AccountAuthenticatorActivity {
                             JSONObject user = FacebookUtil.getSelfInfoAsync();
                             AccountManager am = AccountManager.get(WizardActivity.this);
                             Log.i("Expires", String.valueOf(FacebookUtil.facebook.getAccessExpires()));
-                            ;
                             if (!DeviceUtil.hasAccount(WizardActivity.this)) {
                                 try {
-                                    Bundle result = null;
+                                    Bundle result;
                                     Account account = new Account(user.getString("name"), WizardActivity.this.getString((R.string.ACCOUNT_TYPE)));
                                     if (am.addAccountExplicitly(account, FacebookUtil.facebook.getAccessToken(), null)) {
                                         result = new Bundle();
@@ -376,9 +366,9 @@ public class WizardActivity extends AccountAuthenticatorActivity {
         if (stepDisplay != null) {
             stepDisplay.setText(getResources().getString(R.string.step, flipper.getDisplayedChild() + 1, flipper.getChildCount()));
         }
-        if (isLast()) {
-            //	((TextView) findViewById(R.id.nextLabel)).setText(getResources().getString(R.string.done));
-        }
+//        if (isLast()) {
+//            ((TextView) findViewById(R.id.nextLabel)).setText(getResources().getString(R.string.done));
+//        }
     }
 
 

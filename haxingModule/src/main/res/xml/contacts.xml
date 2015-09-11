@@ -14,13 +14,13 @@
   limitations under the License.
 -->
 <ContactsAccountType xmlns:android="http://schemas.android.com/apk/res/android"
- viewStreamItemActivity="org.codarama.haxsync.activities.PostActivity"
- viewContactNotifyService="org.codarama.haxsync.services.NotifierService"
- viewStreamItemPhotoActivity="org.codarama.haxsync.activities.ThumbActivity">
-<ContactsDataKind
-		android:icon="@drawable/icon"
-		android:mimeType="vnd.android.cursor.item/vnd.org.codarama.haxsync.profile"
-		android:summaryColumn="data2"
-		android:detailColumn="data3"
-		android:detailSocialSummary="true" />
+    viewContactNotifyService="org.codarama.haxsync.services.NotifierService"
+    viewStreamItemActivity="org.codarama.haxsync.activities.PostActivity"
+    viewStreamItemPhotoActivity="org.codarama.haxsync.activities.ThumbActivity">
+    <ContactsDataKind
+        android:detailColumn="data3"
+        android:detailSocialSummary="true"
+        android:icon="@drawable/icon"
+        android:mimeType="vnd.android.cursor.item/vnd.org.codarama.haxsync.profile"
+        android:summaryColumn="data2" />
 </ContactsAccountType> 

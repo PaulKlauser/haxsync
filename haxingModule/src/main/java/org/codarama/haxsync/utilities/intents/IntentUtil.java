@@ -1,6 +1,5 @@
 package org.codarama.haxsync.utilities.intents;
 
-
 import android.app.Activity;
 
 import java.util.List;

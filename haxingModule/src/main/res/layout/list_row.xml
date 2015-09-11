@@ -6,7 +6,7 @@
     android:clickable="false"
     android:focusable="false"
     android:focusableInTouchMode="false"
-    android:longClickable="false" >
+    android:longClickable="false">
 
     <ImageView
         android:id="@+id/icon"
@@ -30,7 +30,6 @@
         android:paddingLeft="?android:attr/listPreferredItemPaddingLeft"
         android:paddingRight="?android:attr/listPreferredItemPaddingRight"
         android:textAppearance="?android:attr/textAppearanceListItemSmall" />
-
 
 
 </RelativeLayout>

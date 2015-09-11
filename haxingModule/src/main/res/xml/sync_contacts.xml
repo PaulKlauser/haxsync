@@ -14,7 +14,6 @@
   limitations under the License.
 -->
 <sync-adapter xmlns:android="http://schemas.android.com/apk/res/android"
-    android:contentAuthority="com.android.contacts" 
     android:accountType="org.codarama.haxsync.account"
-    android:supportsUploading="false"
-/> 
+    android:contentAuthority="com.android.contacts"
+    android:supportsUploading="false" />

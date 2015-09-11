@@ -15,9 +15,9 @@
         <item>4</item>
     </string-array>
     <string-array name="EventChoices">
-        <item >Going</item>
-        <item >Maybe</item>
-        <item >Declined</item>
-        <item >Not responded</item>
+        <item>Going</item>
+        <item>Maybe</item>
+        <item>Declined</item>
+        <item>Not responded</item>
     </string-array>
 </resources>

@@ -13,11 +13,10 @@
   See the License for the specific language governing permissions and
   limitations under the License.
 -->
- <account-authenticator xmlns:android="http://schemas.android.com/apk/res/android"
+<account-authenticator xmlns:android="http://schemas.android.com/apk/res/android"
+    android:accountPreferences="@xml/account_preferences"
     android:accountType="org.codarama.haxsync.account"
     android:icon="@drawable/icon"
-    android:smallIcon="@drawable/icon"
     android:label="@string/app_name"
-    android:accountPreferences="@xml/account_preferences"
- />
+    android:smallIcon="@drawable/icon" />
  

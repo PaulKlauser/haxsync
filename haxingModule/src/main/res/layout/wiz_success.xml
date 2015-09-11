@@ -3,7 +3,7 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:layout_marginTop="16dp"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <TextView
         android:id="@id/textView1"
@@ -11,9 +11,9 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:fontFamily="sans-serif-light"
+        android:gravity="center"
         android:text="@string/done"
         android:textAppearance="?android:textAppearance"
-        android:gravity="center"
         android:textSize="30sp" />
 
     <View
@@ -29,18 +29,20 @@
         android:layout_width="wrap_content"
         android:layout_height="fill_parent"
         android:layout_gravity="center"
-        android:src="@drawable/ic_done_tick" android:layout_weight="1"/>
+        android:layout_weight="1"
+        android:src="@drawable/ic_done_tick" />
 
     <TextView
         android:id="@id/textView1"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginTop="32dp"
         android:gravity="center"
         android:text="@string/wiz_success_text1"
-        android:textAppearance="?android:textAppearanceLarge" android:layout_gravity="bottom"/>
+        android:textAppearance="?android:textAppearanceLarge" />
 
     <CheckBox
         android:id="@+id/checkHide"

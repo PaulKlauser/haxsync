@@ -1,4 +1,12 @@
-    <menu xmlns:android="http://schemas.android.com/apk/res/android">
-        <item android:id="@+id/force_image_dl" android:title="@string/force_image_redl" android:showAsAction="ifRoom|withText" android:icon="@drawable/refresh"></item>
-        <item android:id="@+id/crop_image" android:title="@string/manually_crop" android:showAsAction="ifRoom|withText" android:icon="@drawable/crop"></item>
-    </menu>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/force_image_dl"
+        android:icon="@drawable/refresh"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/force_image_redl"></item>
+    <item
+        android:id="@+id/crop_image"
+        android:icon="@drawable/crop"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/manually_crop"></item>
+</menu>

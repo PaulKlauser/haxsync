@@ -1,49 +1,49 @@
 package org.codarama.haxsync.provider;
 
 import android.util.Log;
+
+import org.codarama.haxsync.utilities.FacebookUtil;
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.codarama.haxsync.utilities.FacebookUtil;
 
 import java.util.ArrayList;
 
 /**
  * Created by mots on 6/23/13.
  */
-public class FacebookGraphFriend implements  Friend{
+public class FacebookGraphFriend implements Friend {
 
-    private  JSONObject json;
     private static final String TAG = "FacebookGraphFriend";
+    private JSONObject json;
 
-    @Override
-    public String toString(){
-        return "Name: "+this.getName(false) +", FB-ID: "+this.getUserName();
+    public FacebookGraphFriend(JSONObject json) {
+        this.json = json;
     }
 
-    public FacebookGraphFriend(JSONObject json){
-        this.json = json;
+    @Override
+    public String toString() {
+        return "Name: " + this.getName(false) + ", FB-ID: " + this.getUserName();
     }
 
     @Override
     public String getName(boolean ignoreMiddleNames) {
         String name = null;
-        try{
-            if(!ignoreMiddleNames){
+        try {
+            if (!ignoreMiddleNames) {
                 name = json.getString("name");
                 Log.i(TAG, "name without middlename" + name);
-            }
-
-            else{
+            } else {
                 name = json.getString("first_name") + " " + json.getString("last_name");
-             }
-        }catch (JSONException e){
+            }
+        } catch (JSONException e) {
             Log.e(TAG, e.toString());
-         }
-        return 	name;
+        }
+        return name;
 
     }
+
     //returns lame @facebook.com email because the API doesn't allow anything else
-    public String getEmail(){
+    public String getEmail() {
         try {
             return json.getString("username") + "@facebook.com";
         } catch (JSONException e) {
@@ -51,7 +51,7 @@ public class FacebookGraphFriend implements  Friend{
         }
     }
 
-    public String getLocation(){
+    public String getLocation() {
         String location = null;
         try {
             JSONObject loc = json.getJSONObject("location");
@@ -70,7 +70,7 @@ public class FacebookGraphFriend implements  Friend{
         } catch (JSONException e) {
             Log.e(TAG, e.toString());
         }
-        return 	username;
+        return username;
     }
 
     @Override
@@ -81,24 +81,25 @@ public class FacebookGraphFriend implements  Friend{
             if (pic.getBoolean("is_silhouette"))
                 return picUrl;
             picUrl = pic.getString("url");
-        } catch (JSONException e){
+        } catch (JSONException e) {
             Log.e(TAG, e.toString());
         }
         return picUrl;
     }
 
-    public String getBirthday(){
+    public String getBirthday() {
         try {
             String birthday = json.getString("birthday");
             String[] birthdayArray = birthday.split("/");
-            if (birthdayArray.length == 3){
+            if (birthdayArray.length == 3) {
                 return birthdayArray[2] + "-" + birthdayArray[0] + "-" + birthdayArray[1];
-            } else if (birthdayArray.length == 2){
-                return "--" + birthdayArray[0]  + "-" + birthdayArray[1];
+            } else if (birthdayArray.length == 2) {
+                return "--" + birthdayArray[0] + "-" + birthdayArray[1];
             }
 
-        } catch (JSONException e) {}
-        return 	null;
+        } catch (JSONException e) {
+        }
+        return null;
     }
 
     //graph api doesn't seem to support this :/

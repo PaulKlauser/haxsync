@@ -1,11 +1,11 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginLeft="0dp"
     android:layout_marginRight="0dp"
     android:divider="?android:attr/dividerHorizontal"
+    android:orientation="horizontal"
     android:showDividers="middle"
     tools:context=".ContactListActivity">
 
@@ -14,11 +14,12 @@
         android:name="org.codarama.haxsync.fragments.ContactListFragment"
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:layout_weight="5"
         android:layout_marginLeft="5dp"
+        android:layout_weight="5"
         tools:layout="@layout/simple_list_item_activated_1" />
 
-    <FrameLayout android:id="@+id/contact_detail_container"
+    <FrameLayout
+        android:id="@+id/contact_detail_container"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="11" />

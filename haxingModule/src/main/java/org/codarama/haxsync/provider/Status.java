@@ -1,8 +1,11 @@
 package org.codarama.haxsync.provider;
 
 public interface Status {
-	public String getMessage();
-	public long getTimestamp();
-	public String getPermalink();
-	public String getID();
+    String getMessage();
+
+    long getTimestamp();
+
+    String getPermalink();
+
+    String getID();
 }
