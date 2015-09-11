@@ -6,21 +6,5 @@ android:
 notifications:
   slack: codarama:YVl3XmRANEPWD74rdOErjXGG
 
-env:
-  global:
-   # The next declaration is the encrypted COVERITY_SCAN_TOKEN, created
-   #   via the "travis encrypt" command using the project repo's public key
-   - secure: "Dl3UKsbbBVpniiZFoHrLYCAD9mvuSRqnaeQG2OXZt6QSGmbYODd005bpmpChOztXNc6wISEFH+w4lKVqb7EfletBZALAW/pHm4hgixF1E889yS1KjPSmSsZsmyobGnGSNgYGfJdPQAQ8O4SQ4bU4FqqMsubBnPACaoFyPigLHLYZItLUTxh80Vh3uK+LIR5UuEQ2waP2QQJxeErCrmbFrTBXTFP6mAXfOReQUPv3rFQgILGNz0EWpYUe+2qA8bRnCVr5ZQJRz8WG882Dj70Owi5FSP3pgBYT10SYscLnTImXX4uW/oKYNdwUFDc7CrRySTXebGV0OOalljPgBDCA52k+ZJuD0gth5ycCVggv2rQEwi6k+x7qgRoVT1t1iMogxZiQLeSfIsPq3+M30MFbYa0cO6eGTXg6JKuicQyMYHWh3ZMz2VjD9m3YdgtCYQBlul6NhJcS0aIynF86Ywc+GehfKUHhH2RUxdvYzygkdwxiZEM2V9r2r+cXwEWzKBlkBGMcM0M+AEk2v8hm6kGhMFjZcl3LQTshcxnvPd6Ru8eTgSC7K26Qm/tDfXXaoDQVi8ICiy1TduO52lT9pPNCdl0isJcL9l1HsxLwiVOgjE0pxMkO88538Ys8JV6mUuQDHaYtke7Z23IZbaKdSWIq6U2ex00Z/AS6JUX61is67CE="
-
-addons:
-  coverity_scan:
-    project:
-      name: "Codarama/haxsync"
-      description: "Android application for contacts synchronization"
-    notification_email: tihomir.mateev@gmail.com
-    build_command_prepend: "gradlew clean"
-    build_command:   "gradlew :haxingModule:compileDebugSources"
-    branch_pattern: master
-
 # Let's try to build...
-script: ./gradlew clean test
+script: ./gradlew clean build test
