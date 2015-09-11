@@ -154,11 +154,9 @@ public class ContactUtil {
             try {
                 c.getContentResolver().applyBatch(ContactsContract.AUTHORITY, operationList);
             } catch (RemoteException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
+                Log.e("Error", e.getLocalizedMessage());
             } catch (OperationApplicationException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
+                Log.e("Error", e.getLocalizedMessage());
             }
 
     }
@@ -185,11 +183,9 @@ public class ContactUtil {
                 try {
                     c.getContentResolver().applyBatch(ContactsContract.AUTHORITY, operationList);
                 } catch (RemoteException e) {
-                    // TODO Auto-generated catch block
-                    e.printStackTrace();
+                    Log.e("Error", e.getLocalizedMessage());
                 } catch (OperationApplicationException e) {
-                    // TODO Auto-generated catch block
-                    e.printStackTrace();
+                    Log.e("Error", e.getLocalizedMessage());
                 }
         }
         cursor.close();
@@ -297,8 +293,7 @@ public class ContactUtil {
                 ContactsSyncAdapterService.mContentResolver.insert(ContactsContract.Data.CONTENT_URI, contentValues);
                 //	mContentResolver.applyBatch(ContactsContract.AUTHORITY,	operationList);
             } catch (Exception e) {
-                e.printStackTrace();
-                //Log.e("ERROR:" , e.^);
+                Log.e("Error", e.getLocalizedMessage());
             }
         }
     }
@@ -353,8 +348,7 @@ public class ContactUtil {
                 ContactsSyncAdapterService.mContentResolver.insert(ContactsContract.Data.CONTENT_URI, contentValues);
                 //	mContentResolver.applyBatch(ContactsContract.AUTHORITY,	operationList);
             } catch (Exception e) {
-                e.printStackTrace();
-                //Log.e("ERROR:" , e.^);
+                Log.e("Error", e.getLocalizedMessage());
             }
         }
 
@@ -391,8 +385,7 @@ public class ContactUtil {
                 ContactsSyncAdapterService.mContentResolver.insert(ContactsContract.Data.CONTENT_URI, contentValues);
                 //	mContentResolver.applyBatch(ContactsContract.AUTHORITY,	operationList);
             } catch (Exception e) {
-                e.printStackTrace();
-                //Log.e("ERROR:" , e.^);
+                Log.e("Error", e.getLocalizedMessage());
             }
         }
 

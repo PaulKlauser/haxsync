@@ -118,8 +118,7 @@ public class ContactsSyncAdapterService extends Service {
             mContentResolver.applyBatch(ContactsContract.AUTHORITY,
                     operationList);
         } catch (Exception e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
+            Log.e("Error", e.getLocalizedMessage());
         }
     }
 
@@ -194,8 +193,8 @@ public class ContactsSyncAdapterService extends Service {
                 mContentResolver.applyBatch(ContactsContract.AUTHORITY,
                         operationList);
             } catch (Exception e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
+                // FIXME catching generic Exception class is not the best thing to do
+                Log.e("Error", e.getLocalizedMessage());
                 return;
             }
             cursor = mContentResolver.query(rawContactUri, new String[]{BaseColumns._ID}, null, null, null);
@@ -265,11 +264,9 @@ public class ContactsSyncAdapterService extends Service {
                 mContentResolver.applyBatch(ContactsContract.AUTHORITY,
                         operationList);
             } catch (RemoteException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
+                Log.e("Error", e.getLocalizedMessage());
             } catch (OperationApplicationException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
+                Log.e("Error", e.getLocalizedMessage());
             }
         }
     }
@@ -571,18 +568,15 @@ public class ContactsSyncAdapterService extends Service {
                         }
                     }
                 } catch (Exception e) {
-                    // TODO: handle exception
+                    // FIXME catching the generic Exception class is not hte best thing to do
                     Log.e("ERROR", e.toString());
-                    e.printStackTrace();
-
                 }
 
                 if (root) {
                     try {
                         RootUtil.refreshContacts();
                     } catch (ShellException e) {
-                        // TODO Auto-generated catch block
-                        e.printStackTrace();
+                        Log.e("Error", e.getLocalizedMessage());
                     }
                 }
                 if (force) {

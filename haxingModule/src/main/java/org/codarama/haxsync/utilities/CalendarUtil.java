@@ -3,6 +3,7 @@ package org.codarama.haxsync.utilities;
 import android.content.ContentValues;
 import android.content.Context;
 import android.provider.CalendarContract.Attendees;
+import android.util.Log;
 
 import org.codarama.haxsync.provider.EventAttendee;
 
@@ -35,8 +36,7 @@ public class CalendarUtil {
             Date d = ISO8601DATEFORMAT.parse(time);
             return d.getTime();
         } catch (ParseException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
+            Log.e("Error", e.getLocalizedMessage());
             return -2;
         }
 

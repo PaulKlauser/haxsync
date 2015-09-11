@@ -63,8 +63,7 @@ public class LoginActivity extends AccountAuthenticatorActivity {
                             LoginActivity.this.finish();
                         }
                     } catch (JSONException e) {
-                        // TODO Auto-generated catch block
-                        e.printStackTrace();
+                        Log.e("Error", e.getLocalizedMessage());
                     }
                 } else {
                     Account account = am.getAccountsByType(LoginActivity.this.getString(R.string.ACCOUNT_TYPE))[0];

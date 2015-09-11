@@ -159,8 +159,7 @@ public class WizardActivity extends AccountAuthenticatorActivity {
 
                                     }
                                 } catch (JSONException e) {
-                                    // TODO Auto-generated catch block
-                                    e.printStackTrace();
+                                    Log.e("Error", e.getLocalizedMessage());
                                 }
                             }
                         }

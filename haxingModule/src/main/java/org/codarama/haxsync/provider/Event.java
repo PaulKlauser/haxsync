@@ -1,5 +1,7 @@
 package org.codarama.haxsync.provider;
 
+import android.util.Log;
+
 import org.codarama.haxsync.utilities.CalendarUtil;
 import org.codarama.haxsync.utilities.FacebookUtil;
 import org.json.JSONException;
@@ -36,7 +38,7 @@ public class Event {
                 String timeString = json.getString("start_time");
                 return CalendarUtil.ISOtoEpoch(timeString);
             } catch (JSONException e1) {
-                e.printStackTrace();
+                Log.e("Error", e.getLocalizedMessage());
                 return -2;
             }
         }
@@ -52,7 +54,7 @@ public class Event {
                     return getStartTime() + 3600000;
                 return CalendarUtil.ISOtoEpoch(timeString);
             } catch (JSONException e1) {
-                e.printStackTrace();
+                Log.e("Error", e.getLocalizedMessage());
                 return -2;
             }
         }

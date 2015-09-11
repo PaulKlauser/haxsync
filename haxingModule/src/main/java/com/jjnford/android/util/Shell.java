@@ -1,5 +1,7 @@
 package com.jjnford.android.util;
 
+import android.util.Log;
+
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
 import java.io.IOException;
@@ -295,7 +297,7 @@ public class Shell {
                     }
                 }
             } catch (IOException e) {
-                e.printStackTrace();
+                Log.e("Error", e.getLocalizedMessage());
             }
         }
     }

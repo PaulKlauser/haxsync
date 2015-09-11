@@ -182,9 +182,9 @@ public class FacebookUtil extends Application {
 
             }
         } catch (JSONException e) {
-            e.printStackTrace();
+            Log.e("Error", e.getLocalizedMessage());
         } catch (MalformedURLException e) {
-            e.printStackTrace();
+            Log.e("Error", e.getLocalizedMessage());
         } catch (IOException e) {
             Log.e(TAG, "Error loading friends: " + e.toString());
         }
@@ -257,7 +257,7 @@ public class FacebookUtil extends Application {
             }
 
         } catch (Exception e) {
-            e.printStackTrace();
+            Log.e("Error", e.getLocalizedMessage());
         }
         return pic;
     }
@@ -467,8 +467,7 @@ public class FacebookUtil extends Application {
             try {
                 Thread.sleep(10);
             } catch (InterruptedException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
+                Log.e("Error", e.getLocalizedMessage());
             }
         }
         return selfInfo;
@@ -534,8 +533,7 @@ public class FacebookUtil extends Application {
             attendees = mergeAttendees(response.getJSONObject(0).getJSONArray("fql_result_set"), response.getJSONObject(1).getJSONArray("fql_result_set"));
             // Log.i("respnse", response.toString());
         } catch (Exception e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
+            Log.e("Error", e.getLocalizedMessage());
         }
     /*try{
 		JSONObject self = getSelfInfo();
@@ -549,7 +547,7 @@ public class FacebookUtil extends Application {
 	    attendees.add(selfAttendee);
 	}catch (Exception e) {
 		// TODO Auto-generated catch block
-		e.printStackTrace();
+		Log.e("Error", e.getLocalizedMessage());
 	}*/
         return attendees;
     }
@@ -602,8 +600,7 @@ public class FacebookUtil extends Application {
             try {
                 Thread.sleep(10);
             } catch (InterruptedException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
+                Log.e("Error", e.getLocalizedMessage());
             }
         }
         return selfInfo;
@@ -644,7 +641,7 @@ public class FacebookUtil extends Application {
                 jsonobject = new JSONObject(response);
                 selfInfo = jsonobject;
             } catch (JSONException e) {
-                e.printStackTrace();
+                Log.e("Error", e.getLocalizedMessage());
             }
         }
     }

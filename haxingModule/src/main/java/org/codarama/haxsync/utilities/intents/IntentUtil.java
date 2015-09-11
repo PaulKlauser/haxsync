@@ -5,7 +5,9 @@ import android.app.Activity;
 import java.util.List;
 
 /**
- * Created by Tishun on 5.9.2015 г..
+ * <p>High amount of magic happens here.</p>
+ *
+ * <p>This is a missing class from the original repo that I will try to recreate. Supposedly it should be used to build up Intents<p/>
  */
 public class IntentUtil {
 

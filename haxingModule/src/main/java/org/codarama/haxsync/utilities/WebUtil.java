@@ -1,5 +1,7 @@
 package org.codarama.haxsync.utilities;
 
+import android.util.Log;
+
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -21,7 +23,7 @@ public class WebUtil {
                 bais.write(byteChunk, 0, n);
             }
         } catch (Exception e) {
-            e.printStackTrace();
+            Log.e("Error", e.getLocalizedMessage());
             if (urlString.contains("fbcdn_sphotos_")) {
                 String alt = urlString;
                 urlString = urlString.replace("fbcdn_sphotos_", "fbcdn-sphotos-");
@@ -36,6 +38,7 @@ public class WebUtil {
                     is.close();
                 } catch (IOException e) {
                     // nothing to do about it
+                    Log.e("Error", e.getLocalizedMessage());
                 }
             }
         }
