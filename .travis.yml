@@ -7,4 +7,4 @@ notifications:
   slack: codarama:YVl3XmRANEPWD74rdOErjXGG
 
 # Let's try to build...
-script: ./gradlew clean build test
+script: ./gradlew connectedCheck coveralls
