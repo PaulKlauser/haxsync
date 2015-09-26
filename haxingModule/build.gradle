@@ -3,12 +3,12 @@ apply plugin: 'jacoco'
 apply plugin: 'com.github.kt3k.coveralls'
 
 android {
-    compileSdkVersion 18
+    compileSdkVersion 21
     buildToolsVersion "23.0.0"
 
     defaultConfig {
         minSdkVersion 15
-        targetSdkVersion 18
+        targetSdkVersion 21
         versionCode 1
         versionName "1.0"
     }
