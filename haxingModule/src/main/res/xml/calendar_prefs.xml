@@ -15,8 +15,7 @@
             android:key="event_status"
             android:summary="@string/event_status_description"
             android:title="@string/event_status" />
-        <net.margaritov.preference.colorpicker.ColorPickerPreference
-            hexValue="true"
+        <yuku.ambilwarna.widget.AmbilWarnaPreference
             android:defaultValue="0xffff2525"
             android:dependency="sync_events"
             android:key="event_color"
@@ -38,9 +37,7 @@
         <CheckBoxPreference
             android:key="sync_birthdays"
             android:title="@string/sync_birthdays" />
-
-        <net.margaritov.preference.colorpicker.ColorPickerPreference
-            hexValue="true"
+        <yuku.ambilwarna.widget.AmbilWarnaPreference
             android:defaultValue="0xffff2525"
             android:dependency="sync_birthdays"
             android:key="birthday_color"
